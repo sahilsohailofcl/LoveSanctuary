@@ -1,0 +1,371 @@
+.header {
+    min-height: 120px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header-popups {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-popups-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+
+}
+
+/* Hide the form and overlay initially */
+.subscribe-form,
+.subscribe-popup-overlay {
+  display: none;
+}
+
+
+.subscribe-form-close-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* The overlay that darkens the background */
+.subscribe-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000; /* Make sure it's above other elements */
+}
+
+/* Popup form styling */
+.subscribe-form {
+   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1001; /* Ensure it's above the overlay */
+  text-align: center;
+}
+
+.subscribe-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    gap: 1rem;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--black-text-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.subscribe-form-heading {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: var(--font-body);
+}
+
+.subscribe-form-message {
+    font-size: 18px;
+    font-weight: 200;
+    opacity: 40%;
+    font-family: var(--font-body);
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Active state for showing the form and overlay */
+.subscribe-form.active,
+.subscribe-popup-overlay.active {
+  display: block;
+}
+
+  
+
+/* Popup overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup content */
+.popup-content {
+    height: 600px;
+    width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+}
+
+.popup-content-heading {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: var(--font-body);
+}
+
+.share-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.share-links-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share-links-txt {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-text-color);
+    font-family: var(--font-body);
+}
+
+/* Close button */
+.close-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+ 
+.header-popups-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.header-popups-icon-svg {
+    height: 20px;
+    width: 18;
+    fill: var(--secondary-color);
+
+}
+
+.header-branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    max-height: 80px;
+    width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header {
+        min-height: 60px;
+        width: 100%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .header-branding {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .logo-img {
+        height: 60px;
+        width: auto;
+    }
+
+    .header-popups-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10rem;
+    
+    }
+
+    .subscribe-form {
+       position: fixed;
+       top: 74%;
+       bottom: 0;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       width: 100%;
+       height: 400px;
+       padding: 20px;
+       background-color: white;
+       border-radius: 10px;
+       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+       z-index: 1001; /* Ensure it's above the overlay */
+       text-align: center;
+    }
+
+    .subscribe-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 6px;
+        gap: 0.8rem;
+    }
+
+    .subscribe-form-img {
+        height: 40px;
+        width: auto;
+    }
+    
+    .subscribe-form-heading {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: var(--font-body);
+    }
+    
+    .subscribe-form-message {
+        font-size: 14px;
+        font-weight: 200;
+        opacity: 40%;
+        font-family: var(--font-body);
+    }
+    
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: var(--black-text-color);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .success-message {
+        color: green;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 4px;
+      }
+
+    .popup-content {
+        height: 430px;
+        width: 100%;
+        position: sticky;
+        top: 60%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .popup-content-heading {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: var(--font-body);
+    }
+
+    .share-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 0;
+        margin-top: 1rem;
+    }
+
+    .share-links-txt {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--black-text-color);
+        font-family: var(--font-body);
+    }
+
+    .header-popups-icon-svg {
+        height: 18px;
+        width: 18;
+        fill: var(--secondary-color);
+    
+    }
+
+    .copyLinkButton {
+        width: 80%;
+    }
+
+  }

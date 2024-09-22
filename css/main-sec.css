@@ -1,0 +1,129 @@
+.main {
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-links-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links-icons {
+    height: 40px;
+    width: 40px;
+    fill: var(--black-text-color);
+}
+
+.affiliate-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.affiliate-links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.affiliate-links-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    text-align: center;
+    height: 60px;
+    min-width: 500px;
+    border-radius: 40px;
+    padding: 0 20px;
+}
+
+.affiliate-links-items-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.affiliate-links-items-txt {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-body);
+    color: var(--white-text-color);
+}
+
+.affiliate-links-item-icon {
+    height: 20px;
+    width: 20px;
+    fill: var(--secondary-color);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main {
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .social-links-icons {
+        height: 36px;
+        width: 36px;
+        fill: var(--black-text-color);
+        margin-left: 6px;
+    }
+
+    .affiliate-links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+   
+    .affiliate-links-items {
+        height: 58px;
+        min-width: 320px;
+        border-radius: 40px;
+    }
+
+    .affiliate-links-items-img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .affiliate-links-items-txt {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--font-body);
+        color: var(--white-text-color);
+    }
+
+    .affiliate-links-item-icon {
+        height: 16px;
+        width: 16px;
+        fill: var(--secondary-color);
+    }
+
+  }
