@@ -348,8 +348,8 @@ button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 6px;
-        gap: 0.8rem;
+        padding-top: 0;
+        gap: 0.6rem;
     }
 
     .subscribe-form-img {
