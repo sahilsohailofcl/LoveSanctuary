@@ -17,7 +17,7 @@
     font-family: var(--font-body);
     font-size: 14px;
     font-weight: 500;
-    color: var(--black-text-color);
+    color: var(--white-text-color);
 }
 
 @media only screen and (max-width: 768px) {
@@ -36,7 +36,7 @@
         font-family: var(--font-body);
         font-size: 10px;
         font-weight: 500;
-        color: var(--black-text-color);
+        color: var(--white-text-color);
     }
 
 }

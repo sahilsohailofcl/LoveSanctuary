@@ -22,7 +22,7 @@
 .social-links-icons {
     height: 40px;
     width: 40px;
-    fill: var(--black-text-color);
+    fill: var(--white-text-color);
 }
 
 .affiliate-links {
@@ -44,7 +44,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     text-align: center;
     height: 60px;
     min-width: 500px;
@@ -62,19 +62,19 @@
     font-size: 20px;
     font-weight: 400;
     font-family: var(--font-body);
-    color: var(--white-text-color);
+    color: var(--black-text-color);
 }
 
 .affiliate-links-item-icon {
     height: 20px;
     width: 20px;
-    fill: var(--secondary-color);
+    fill: var(--black-text-color);
 }
 
 @media only screen and (max-width: 768px) {
 
     .main {
-        min-height: 280px;
+        min-height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -89,7 +89,7 @@
     .social-links-icons {
         height: 36px;
         width: 36px;
-        fill: var(--black-text-color);
+        fill: var(--white-text-color);
         margin-left: 6px;
     }
 
@@ -117,13 +117,13 @@
         font-size: 16px;
         font-weight: 400;
         font-family: var(--font-body);
-        color: var(--white-text-color);
+        color: var(--black-text-color);
     }
 
     .affiliate-links-item-icon {
         height: 16px;
         width: 16px;
-        fill: var(--secondary-color);
+        fill: var(--black-text-color);
     }
 
   }

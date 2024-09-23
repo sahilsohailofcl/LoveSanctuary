@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const email = document.getElementById('email').value;
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbw1w24cH6TjzFQnKfdqtVzzeJhTyUs4YvY8ABP2BOqX1bSNSWNzIdd4kHoa78HxiSSJAQ/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbyo1EA5Wb9O4i6Flruv_Z3hpqcTu8H1TUOw4wx1m90fYMqNrq6pvXgjJ7_rFBvQ3px5Ug/exec', {
         method: 'POST',
         mode: 'no-cors', // Since we are posting to a Google Script
         headers: {
