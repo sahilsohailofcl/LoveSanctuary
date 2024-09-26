@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
       subscribeForm.classList.remove('active');
       popupOverlay.classList.remove('active');
   });
+  
+  // Close the popup when the close button is clicked
+  subscribeformclosePopup.addEventListener('click', () => {
+    subscribeForm.classList.remove('active');
+    popupOverlay.classList.remove('active');
+  });
 
   // Handle form submission
   document.getElementById('subscribe-form').addEventListener('submit', async (event) => {
