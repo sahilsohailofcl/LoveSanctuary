@@ -1,5 +1,20 @@
-//Subscribe__Function
+//Words-Limit__Function
 
+function truncateText(selector, wordLimit) {
+    const elements = document.querySelectorAll(selector);
+    elements.forEach((element) => {
+      let words = element.textContent.trim().split(' ');
+      if (words.length > wordLimit) {
+        element.textContent = words.slice(0, wordLimit).join(' ') + '...';
+      }
+    });
+  }
+
+  // Apply the truncation for titles and descriptions
+  truncateText('.product-title', 5); // Limit title to 10 words
+  truncateText('.product-description', 17);
+
+// Subscribe Function
 document.addEventListener('DOMContentLoaded', () => {
     const newsletterIcon = document.getElementById('newsletter');
     const subscribeForm = document.querySelector('.subscribe-form');
@@ -32,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Send the email to your Google Apps Script
         try {
-            const response = await fetch('https://script.google.com/macros/s/AKfycbysPhBpZ7zg9J_9gpONH591pA8WQQOMo68OENxKiOn4dUsB0i7n1NcSlmMlAge4dK0xJw/exec', {
+            const response = await fetch('https://script.google.com/macros/s/AKfycbzGxeSyizPOgT-RZoKKPcHGpRxRq4hAQE-4rl99Z5OpetO0ZcD7deAnZuzJMSt2dwdg/exec', {
                 method: 'POST',
                 mode: 'no-cors', // Use no-cors if you are facing CORS issues
                 headers: {
@@ -49,12 +64,14 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('email').value = '';
 
             console.log('Email submitted successfully!');
+
         } catch (error) {
             console.error('Error:', error);
             alert('Failed to submit email.');
         }
     });
 });
+
 
 //Share-links__Function
 
@@ -90,3 +107,4 @@ copyLinkButton.addEventListener('click', () => {
         alert('Failed to copy URL: ', err);
     });
 });
+
